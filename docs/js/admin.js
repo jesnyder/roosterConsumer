@@ -33,12 +33,12 @@ var calculatePassages = function functioncalculatePassages(inputInfo){
       inputInfo.cellYieldTotal = Pfound.cellYield;
       inputInfo.cellYieldTotalReadable = (Pfound.cellYield).toLocaleString('en-US');
       inputInfo.overfill = Math.round(Pfound.cellYield/inputInfo.cells*100-100);
-      inputInfo.EVCollect = Pfound.mediaTotal;
+      inputInfo.EVCollect =  Pfound.mediaPer * Pfound.flaskCount;
     };
     if (inputInfo.passage == 1){
       inputInfo.cellSeedTotal = Pfound.cellSeed;
       inputInfo.cellSeedTotalReadable = (Pfound.cellSeed).toLocaleString('en-US');
-      inputInfo.RoosterGem = Pfound.mediaTotal;
+      inputInfo.RoosterGem = Pfound.mediaPer * Pfound.flaskCount;
     };
 
     if (inputInfo.passage == 1){
