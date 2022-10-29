@@ -196,8 +196,12 @@ function buildTableData(inputInfo, passageCalcs){
   };
 
   var end = [
-      {'Col1': '', 'Col2': '', 'Col3': '', 'Col4': ''} ,
-      {'Col1': '', 'Col2': '', 'Col3': '', 'Col4': ''} ,
+      {'Col1': 'Get the most out of your media.', 'Col2': '', 'Col3': '', 'Col4': ''} ,
+      {'Col1': '1. Avoid temperature cycling the media, including components. This will compromise quality.',  'Col4': ''} ,
+      {'Col1': '2. Avoid water baths to warm media. Instead equilibrate the media, including components, to room temperature out of direct light. The formula is sensitive to photo- and thermal-degradation.',  'Col4': ''},
+      {'Col1': '3. Skip media changes, even half changes, between passages.', 'Col4': ''},
+      {'Col1': '4. For Xeno-Free media culture, use Corning CellBind flaskware or a vitronectin coating, otherwise cell attachment will be inconsistent and poor.', 'Col4': ''},
+      {'Col1': '5. Passage the cells at 80-90% confluent. Overly confluent cells may enter a lag phase of growth, which will reduce the total cell yield or delay cell growth. Also, overly confluent cells may produce extracellular matrix, which makes the cells aggregate in suspension. Passaging a little too early is better than a little too late.',  'Col4': ''},
   ];
 
 
