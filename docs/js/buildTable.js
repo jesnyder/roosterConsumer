@@ -34,6 +34,9 @@ document.getElementById("calculate-button").addEventListener("click", function()
   let name4 = (passageCalcs.EVCollect).toLocaleString('en-US') + ' mL RoosterCollect-EV';
   document.getElementById("name4").innerHTML = name4;
 
+  let name5 = passageCalcs.cellSeedTotalReadable + ' cells';
+  document.getElementById("name5").innerHTML = name5;
+
   myFunction(tableFlasks);
 
 });
