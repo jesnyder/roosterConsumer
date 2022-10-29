@@ -75,7 +75,7 @@ function buildTableData(inputInfo, passageCalcs){
       'Col3': passageCalcs.cellSeedTotalReadable,
       'Col4': 'cells'
     } , {
-      'Col1': 'Media Volume',
+      'Col1': 'Media Volume (including to quench TrypLe)',
       'Col3': passageCalcs.mediaTotal.toLocaleString('en-US'),
       'Col4': 'mL'
     } , {
@@ -150,7 +150,7 @@ function buildTableData(inputInfo, passageCalcs){
           'Col3': passageInfo.cellYieldReadable,
           'Col4': 'cells'
         }, {
-          'Col1': 'P' + m + ' Media Total',
+          'Col1': 'P' + m + ' Media Total (including to quench TrypLe)',
           'Col3': passageInfo.mediaTotal.toLocaleString('en-US'),
           'Col4': 'mL'
         }, {
