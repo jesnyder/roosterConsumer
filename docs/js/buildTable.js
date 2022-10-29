@@ -22,13 +22,13 @@ document.getElementById("calculate-button").addEventListener("click", function()
 
   var tableFlasks = buildTableData(inputInfo, passageCalcs);
 
-  let name = passageCalcs.flaskDescLong + ' for Cell Expansion';
+  let name = 'Cell Expansion: ' + passageCalcs.flaskDescLong ;
   document.getElementById("name").innerHTML = name;
 
-  let name2 = 'Optional for Genetic Engineering during P1: ' + Math.ceil(passageCalcs.RoosterGem/200) + ' RoosterGEM Bottles (200mL/bottle)';
+  let name2 = 'Optional Genetic Engineering during P1: ' + Math.ceil(passageCalcs.RoosterGem/200) + ' RoosterGEM Bottles (200mL/bottle)';
   document.getElementById("name2").innerHTML = name2;
 
-  let name3 = 'Optional for EV Collection after Final Passage: ' + passageCalcs.EVCollect + ' mL RoosterCollect-EV';
+  let name3 = 'Optional EV Collection after Final Passage: ' + passageCalcs.EVCollect + ' mL RoosterCollect-EV';
   document.getElementById("name3").innerHTML = name3;
 
   myFunction(tableFlasks);
@@ -101,13 +101,19 @@ function buildTableData(inputInfo, passageCalcs){
   console.log('inputInfo.passages = ')
   console.log(inputInfo.passages)
 
-  for (let m = 2; m>0; m--) {
+  for (let m = inputInfo.passages; m>0; m--) {
 
     if (m == 2){
       var passageInfo = passageCalcs.P2;
     }
     else if (m == 1) {
       var passageInfo = passageCalcs.P1;
+    }
+    else if (m == 3) {
+      var passageInfo = passageCalcs.P3;
+    }
+    else if (m == 4){
+      var passageInfo = passageCalcs.P4;
     }
     else {
       var passageInfo = passageCalcs.P1;

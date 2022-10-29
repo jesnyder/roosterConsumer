@@ -49,6 +49,9 @@ var calculatePassages = function functioncalculatePassages(inputInfo){
     if (inputInfo.passage == 4){
       inputInfo.P4 = Pfound;
     };
+    if (inputInfo.passage == 5){
+      inputInfo.P5 = Pfound;
+    };
 
     console.log('inputInfo.passage = ')
     console.log(inputInfo.passage)

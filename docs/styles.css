@@ -10,10 +10,14 @@ h1   {color: #171B60;
       font: 20px Calibri;
       font-weight: bold;
      }
-h2   {color: #171B60;
+h2   {color: #F05323;
       font: 18px Calibri;
       font-weight: bold;
      }
+h3   {color: #F05323;
+     font: 15px Calibri;
+
+    }
 p    {color: #565656;
       font: 16px Calibri}
 
