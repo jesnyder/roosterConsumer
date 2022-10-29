@@ -25,10 +25,10 @@ document.getElementById("calculate-button").addEventListener("click", function()
   let name = 'Cell Expansion: ' + passageCalcs.flaskDescLong ;
   document.getElementById("name").innerHTML = name;
 
-  let name2 = 'Optional Genetic Engineering during P1: ' + Math.ceil(passageCalcs.RoosterGem/200) + ' RoosterGEM Bottles (200mL/bottle)';
+  let name2 = 'Optional Genetic Engineering (during P1): ' + Math.ceil(passageCalcs.RoosterGem/200) + ' RoosterGEM Bottles (200mL/bottle)';
   document.getElementById("name2").innerHTML = name2;
 
-  let name3 = 'Optional EV Collection after Final Passage: ' + (passageCalcs.EVCollect).toLocaleString('en-US') + ' mL RoosterCollect-EV';
+  let name3 = 'Optional EV Collection (after Final Passage): ' + (passageCalcs.EVCollect).toLocaleString('en-US') + ' mL RoosterCollect-EV';
   document.getElementById("name3").innerHTML = name3;
 
   myFunction(tableFlasks);

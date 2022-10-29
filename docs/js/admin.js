@@ -21,9 +21,12 @@ var calculatePassages = function functioncalculatePassages(inputInfo){
     trypleTotal = trypleTotal + Pfound.trypleTotal;
     inputInfo.trypleTotal = trypleTotal;
     inputInfo.mediaBottles = Math.ceil(mediaTotal/500);
-    flaskDesc = flaskDesc + ' x' + Pfound.flaskCount + ' ' + Pfound.flaskType + ' + ' ;
+    flaskDesc = flaskDesc + ' ' + Pfound.flaskType + ' x' + Pfound.flaskCount;
+    if (i > 1){
+      flaskDesc = flaskDesc + ' + '
+    };
     inputInfo.flaskDesc = flaskDesc;
-    inputInfo.flaskDescLong = flaskDesc + ' ' + Math.ceil(mediaTotal/500) + ' bottles media';
+    inputInfo.flaskDescLong =  Math.ceil(mediaTotal/500) + ' bottles media + ' + flaskDesc;
 
     if (inputInfo.passage == inputInfo.passages){
       inputInfo.cellYieldTotal = Pfound.cellYield;
