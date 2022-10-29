@@ -184,6 +184,18 @@ var T225 = {
   tryple: 10,
 };
 
+var CS1 = {
+  surArea: 1272*1,
+  media: 750/5,
+  tryple: 100/5,
+};
+
+var CS2 = {
+  surArea: 1272*2,
+  media: 750/5*2,
+  tryple: 100/5*2,
+};
+
 var CS5 = {
   surArea: 1272*5,
   media: 750,

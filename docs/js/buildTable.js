@@ -203,8 +203,13 @@ function buildTableData(inputInfo, passageCalcs){
       {'Col1': '4. For Xeno-Free media culture, use Corning CellBind flaskware or a vitronectin coating, otherwise cell attachment will be inconsistent and poor.', 'Col4': ''},
       {'Col1': '5. Passage the cells at 80-90% confluent. Overly confluent cells may enter a lag phase of growth, which will reduce the total cell yield or delay cell growth. Also, overly confluent cells may produce extracellular matrix, which makes the cells aggregate in suspension. Passaging a little too early is better than a little too late.',  'Col4': ''},
       {'Col1': ' ', 'Col2': '', 'Col3': '', 'Col4': ''} ,
-      {'Col1': 'Contact us for more information:', 'Col2': '', 'Col3': '', 'Col4': ''} ,
-      {'Col1': 'https://www.roosterbio.com/contact/', 'Col2': '', 'Col3': '', 'Col4': ''} ,
+      {'Col1': 'Contact us for more information:', 'Col3': 'https://www.roosterbio.com/contact/', 'Col4': ''} ,
+      {'Col1': 'CS10 - CellStack-10', 'Col3': 'https://ecatalog.corning.com/life-sciences/b2c/US/en/Browse-Products-by-Application/Cell-Therapy-and-Vaccines/CellSTACK%C2%AE/Corning%C2%AE-CellSTACK%C2%AE-Culture-Chambers/p/3271', 'Col4': ''} ,
+      {'Col1': 'CS5 - CellStack-5', 'Col3': 'https://ecatalog.corning.com/life-sciences/b2c/US/en/Browse-Products-by-Application/Cell-Therapy-and-Vaccines/CellSTACK%C2%AE/Corning%C2%AE-CellSTACK%C2%AE-Culture-Chambers/p/3313', 'Col4': ''} ,
+      {'Col1': 'T225 - Flask', 'Col2': '', 'Col4': ''} ,
+      {'Col1': 'T75 - Flask', 'Col2': '', 'Col3': '', 'Col4': ''} ,
+      {'Col1': 'T25 - Flask', 'Col2': '', 'Col3': '', 'Col4': ''} ,
+      {'Col1': 'For XF Media: Corning CellBind Flaskware', 'Col3': 'https://ecatalog.corning.com/life-sciences/b2c/US/en/Browse-Products-by-Application/Cell-Therapy-and-Vaccines/CellSTACK%C2%AE/Corning%C2%AE-CellSTACK%C2%AE-Culture-Chambers/p/corningCellSTACKCultureChambers', 'Col4': ''} ,
   ];
 
 
