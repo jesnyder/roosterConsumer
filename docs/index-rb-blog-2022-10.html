@@ -1,0 +1,193 @@
+<html>
+  <head>
+    <title>MSC Clinical Trials</title>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Josefin+Sans" />
+    <link rel="stylesheet" href="styles.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="js/leaflet.timeline.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.14.0.min.js"></script>
+
+    <link href="https://unpkg.com/tabulator-tables@4.8.1/dist/css/tabulator.min.css" rel="stylesheet">
+    <script type="text/javascript" src="https://unpkg.com/tabulator-tables@4.8.1/dist/js/tabulator.min.js"></script>
+
+  </head>
+
+
+  <body>
+
+
+
+		<script src="js/allo.js"></script>
+		<script src="js/auto.js"></script>
+		<script src="js/both.js"></script>
+		<script src="js/undeclared.js"></script>
+    <script src="js/allo_recent.js"></script>
+		<script src="js/auto_recent.js"></script>
+		<script src="js/both_recent.js"></script>
+		<script src="js/undeclared_recent.js"></script>
+
+    <script src="js/Conditions.js"></script>
+    <script src="js/Interventions.js"></script>
+    <script src="js/Locations.js"></script>
+    <script src="js/Sponsor_Collaborators.js"></script>
+    <script src="js/Phases.js"></script>
+    <script src="js/products.js"></script>
+
+
+    <!-- Animated map-->
+    <div id="map" style="margin-left: 3%; width:96% ;"></div>
+    <script src="js/map.js"></script>
+
+
+    <div id="text" style="width:80% ; margin-left: 3%;">
+    <h1>The Sun Never Sets on a World Spinning with hMSC Advanced Therapeutics</h1>
+    <p  style="margin-left: 5%;"><i>You realize the sun doesn't go down, <br>It's just an illusion caused by the world spinning round.</i><a href="#section1">[1]</a></p>
+
+    <h2>A Map Toward New Knowledge</h2>
+
+    <p>For clinical trials featuring human mesenchymal stromal/stem cells (hMSCs), sunsets are <i>just an illusion</i> in more ways than one. Somewhere on earth, a patient is likely being prepped at this very moment for an injection of hMSCs aimed at one of hundreds of potential indications. While such trials began in the 1990s across sites to ultimately span six continents, it's safe to say that the sun has not set on hMSC studies for over 15 years. Are these new trials facing a sunset any time soon? The answer is <u>no</u>. We thought this would be worth sharing-our study shown in this blog is most illustrative.
+
+    <br><br>
+    A collaborative, global advanced therapeutics community  has coordinated a long-term effort to translate mesenchymal stromal cell (MSC) research into safe and efficacious regenerative treatments. We compiled a representative, but not exhaustive list, using publicly available data. The method is described later in this post. The U.S. National Library of Medicine database,
+    <a href="https://clinicaltrials.gov/"  target="_blank" rel="noopener">ClinicalTrials.gov</a>
+     <a href="#section1">[2]</a> indexed over 1,400 trials clinical trials since 1995 that use an MSC intervention. These trials enrolled (or planned to enroll) more than 68,000 participants to treat dozens of conditions, which includes arthritis, multiple sclerosis, amyotrophic lateral sclerosis (ALS), and COVID-19. This growing and periodically updated body of work is your resource. Beyond lists and charts, navigate through our community using this interactive map. Trials are grouped based on the MSC source, which differentiates autologous, bespoke therapeutic manufacturing from allogeneic, batch-produced processes.
+
+    <br><br>
+    To make reliable therapies, the MSC source and upstream bioprocess must be standardized. There has been a historic choice between allogeneic and autologous. Patients donate their own tissue material for autologous therapies, which  minimizes immune-mediated cell clearance, but adds lead time to the preparation of the therapy and unknowns to the reliability of the cells. On the other hand, allogeneic MSCs separate therapeutic manufacture from the clinical treatment bedside for improved quality control, off-the-shelf accessibility, and lot-to-lot comparability.
+
+    <br><br>
+    Explore the interactive map of trials grouped by MSC source: allogenic (orange), autologous (dark purple), both (light blue), or undeclared (gray). A trial can only belong to one group. If a trial has multiple study sites, it will appear multiple times on the map. Click on the circular marker to see the trial title, location name, number enrolled, and a link to more information. The radius of the circular marker reflects the number enrolled. Larger circles enrolled more participants. Use the +/- in the upper left- hand corner of the map or your mouse scroll wheel to zoom in and out of the map. Use the timeline along the bottom edge to animate the map. Trials appear according to their start date. The button on the top right corner of the map allows you to prescriptively show or hide some of the groups.
+    <br>
+
+  <h2>From Disillusionment to Enlightenment</h2>
+  <p>
+  Disillusionment is not an uncommon sentiment in technology, and new cellular therapies are no exception. However, one analyst's gloomy perspective is another's opportunity for transformation. One quote attributed to Mark Twain states </p>
+
+  <p  style="margin-left: 5%;"><i>
+  "The reports of my death are greatly exaggerated." </i></p>
+
+  <p>
+  Similarly, in contrast with recent pronouncements, <a href="#section1">[3]</a> could our visualization shows here that reports of MSCs' demise might may also be exaggerated?! Quite the opposite, in fact. If anything, the <a href="#section2">slope of cumulative trials has begun to increase since 2018</a>, signifying an end MSCs' time in the Gartner Hype Cycle's Trough of Disillusionment. Does this resemble a new pattern fitting "Slope of Enlightenment?" This emerging phase in the cycle is where we'd expect</p>
+
+  <p  style="margin-left: 5%;"><i>
+  "More instances of how the technology can benefit the enterprise start to crystallize and become more widely understood. Second- and third-generation products appear from technology providers. More enterprises fund pilots; conservative companies remain cautious."
+</i><a href="#section1">[4]</a></p>
+
+  <p>In 2020, we accordingly predicted,</p>
+
+  <p  style="margin-left: 5%;"><i>
+  "As the hMSC and broader regenerative medicine supply chain becomes more industrialized, bulk manufacturing will improve, bringing enhanced quality, broad availability, and attractive cost structures to enable business models not possible in the past...This supply chain industrialization, coupled with other innovations and technology convergence, will lead to multi-log reduction in costs of final therapeutic product, bringing us to a new golden age of Regenerative Medicine."
+</i><a href="#section1">[5]</a></p>
+
+  <p>
+  Whether autologous or allogeneic, we look forward to bright future made possible, in part, on a firm foundation established by over two decades of iterative improvements and a democratization of MSC knowledge and best practices shared, worldwide.
+  </p>
+
+  <h2>NOTES: Making of the Map</h2>
+  <p>
+  Our objective was an interactive map with geolocated clinical trial locations that use an MSC intervention built using open source software and publicly available data. The tasks to complete this objective are: (1) build the dataset, (2) assign groups, (3) geolocate trials, (4) code the map, (5) annual counts for analytics.
+
+   <ol id="my-list">
+
+  <li><b>Build the database:</b> All clinical trial data comes from the NIH database maintained by the US National Library of Medicine -
+  <a href="https://clinicaltrials.gov"  target="_blank" rel="noopener">ClinicalTrials.gov</a>. We accessed the data using a combination of manual and automated searches conducted through the
+  <a href="https://clinicaltrials.gov/api/"  target="_blank" rel="noopener">application programming interface (API)</a>
+  and a
+  <a href="https://pytrials.readthedocs.io/en/latest/readme.html"  target="_blank" rel="noopener">python wrapper - pytrials</a>.
+  <br><br>
+  Our focus was clinical trials that use a mesenchymal stromal cell therapy. The nomenclature of MSC has changed over the years - from mesenchymal stem cell to mesenchymal stromal cell. The term "mesenchymal" could be conflated with results for "mesenchyme" - the general term for connective tissue. To find trials with MSC therapies, we listed search terms that would lead to MSC cells - "mesenchymal stromal" and "mesenchymal stem", referenced MSC source tissue - "mesenchymal umbilical cord" or "mesenchymal placental", and tradenames for MSC therapies - "mesenchymal
+  <a href="https://en.wikipedia.org/wiki/Darvadstrocel"  target="_blank" rel="noopener">Darvadstrocel</a>"
+  and "mesenchymal
+  <a href="https://en.wikipedia.org/wiki/Prochymal"  target="_blank" rel="noopener">Prochymal</a>".
+  <br><br>There is a 1000 trial max download using the automated query, so if the results for an automated search term were more than the maximum allowable, we conducted a manual search, download, and save to capture the full record. This was only required for "mesenchymal stem". Once scraped or downloaded, all trials were coregistered using their URL on ClinicalTrials.gov (which includes their ID number) as a unique identifier to prevent duplicate entries.
+
+  <li><b>Assign groups:</b> Search the description, title, and intervention fields of each trial in the database for terms indicative of either an allogeneic or autologous source. If one or more
+
+  <a href="https://github.com/jesnyder/mapClinical/blob/main/user_provided/admin/allo_terms.csv"  target="_blank" rel="noopener">allogeneic terms</a>
+  are found, then the trial is assigned to the allogeneic group. Terms included "allogeneic", as well as trade names for allogeneic MSC products, and sources of MSCs that must be allogeneic, like placenta and umbilical cord.
+
+  Similarly, if one or more
+  <a href="https://github.com/jesnyder/mapClinical/blob/main/user_provided/admin/auto_terms.csv"  target="_blank" rel="noopener">autologous terms</a>
+
+  are found, then the trial is assigned to the autologous group. If terms from both the allogeneic and autologous lists are found, then the trial is assigned to the "both" group. If no terms from either group are found, then the trial is assigned to the "undeclared" group. Each trial is assigned to only one group.
+
+  <li><b>Geolocate trials:</b> Search the "Locations" field of each trial to find all the locations of the trials. Some trials have multiple locations that are separated by the '|' character. A list of
+    <a href="https://github.com/jesnyder/mapClinical/blob/main/program_generated/locations/locations.csv"  target="_blank" rel="noopener">unique trial locations</a>
+    can be found in the code repo.
+  We found the latitude and longitude for each location using the
+  <a href="https://www.openstreetmap.org"  target="_blank" rel="noopener"> OpenStreetMap API</a>.
+
+  <li><b>Code the map:</b> Coregister the ClinicalTrials.gov trial data with the geolocated locations. Prepare geojson for each group according to standards set by the Internet Engineering Task Force
+  (<a href="https://geojson.org/"  target="_blank" rel="noopener">https://geojson.org/</a>). For each group, a javascript file is written containing a unique variable with the group name that is set equal to the geojson and saved as a java script file.
+
+  <li><b>Annual counts:</b> Count the number of trials and participants enrolled for all the trials and for each group.
+
+  </ol id="my-list">
+
+
+  <h2 id="section1">References</h2>
+
+  <ol>
+
+  <li >Lips, the Flaming. Do You Realize?; Available from:
+    <br><a href="https://youtu.be/douPPqRdFCA"  target="_blank" rel="noopener">https://youtu.be/douPPqRdFCA</a>.
+
+  <li >Zarin, D. A., et al., The ClinicalTrials.gov results database--update and key issues. N Engl J Med, 2011. 364(9): p. 852-60. 10.1056/NEJMsa1012065
+    <br><a href="https://doi.org/10.1056/NEJMsa1012065"  target="_blank" rel="noopener">https://doi.org/10.1056/NEJMsa1012065</a>.
+
+  <li >Group, Darkhorse Consulting. Anthony Davies looks ahead to the rest of 2021. 2021; Available from:
+    <br><a href="https://darkhorseconsultinggroup.com/anthony-davies-looks-ahead-to-the-rest-of-2021/"  target="_blank" rel="noopener">https://darkhorseconsultinggroup.com/anthony-davies-looks-ahead-to-the-rest-of-2021/</a>.
+
+  <li >Gartner Hype Cycle - Interpreting technology hype. Available from:
+  <br><a href="https://www.gartner.com/en/research/methodologies/gartner-hype-cycle"  target="_blank" rel="noopener">https://www.gartner.com/en/research/methodologies/gartner-hype-cycle</a>.
+
+  <li >Lembong, Josephine, Carson, Jon, Rowley, Jon. The Stabilization of hMSCs as a Technology. 2020; Available from:
+    <br><a href="https://www.roosterbio.com/blog/white-paper-the-stabilization-of-hmscs-as-a-technology/"  target="_blank" rel="noopener">https://www.roosterbio.com/blog/white-paper-the-stabilization-of-hmscs-as-a-technology/</a>.
+
+  </ol>
+
+  <br>
+    <h2>Explore recent trials - those with a start date in 2020 or later.</h2>
+    <p>A map of recent trials, plot of trials and the enrollment each year are included below. Review and please reach out with further questions or comments for future visualizations. </p>
+    </div>
+
+    <div id="map2"style="margin-left: 3%; width:96% ;"></div>
+    <script src="js/map2.js"></script>
+
+
+    <div style="margin-left: 10%; width:60% ;">
+    <br><h2 id="section2">
+    Cumulative counts of trials each year and enrollment
+    <p>Review the number of trials and total participants enrolled for all trials and each survey cell source. Totals presented as a Cumulative Distribution Function (CDF).</p>
+    </h2></div>
+
+    <div id="container" style="text-align:center; width:80%; margin-left: 10%">
+    <canvas id="line-chart-cdf_count" height="125"  style="border:0px solid"></canvas>
+    <script src="js/cdf_js_count.js"></script>
+    </div>
+
+    <div style="margin-left: 3%; width:96% ;">
+    <br></div>
+
+    <div id="container" style="text-align:center; width:80%; margin-left: 10%">
+    <canvas id="line-chart-cdf_enroll"  height="125"  style="border:0px solid"></canvas>
+    <script src="js/cdf_js_enroll.js"></script>
+    <br>
+    <br>
+
+    <p>
+    The
+    <a href="https://github.com/jesnyder/mapClinical/"  target="_blank" rel="noopener">code</a>
+     to make the map is open source, free, and available for download. Be in touch with your questions for us to visualize. Email Jessica Snyder - jsnyder@roosterbio.com
+    </p>
+    </div>
+
+
+  </body>
+</html>

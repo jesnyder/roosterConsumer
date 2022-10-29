@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rooster Calculator</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+  <link href="https://unpkg.com/tabulator-tables@4.8.1/dist/css/tabulator.min.css" rel="stylesheet">
+  <script type="text/javascript" src="https://unpkg.com/tabulator-tables@4.8.1/dist/js/tabulator.min.js"></script>
+  <script type="text/javascript" src="https://oss.sheetjs.com/sheetjs/xlsx.full.min.js"></script>
+
+  <script src="js/admin.js"></script>
+  <script src="js/admin2.js"></script>
+
+</head>
+
+  <body>
+
+  <div style="background-color:white; width:80% ; margin-left: 10%;  max-width:800px; font-family: Calibri;">
+    <br>
+
+    <h1>Plan your experiment. <br>
+    How many bottles of media? </h1>
+    <input type="number" id="tentacles1" name="tentacles1"
+       min="1" max="100000" value="200">
+    Target Cell Yield (millions of cells)
+    <br>
+    <input type="number" id="tentacles3" name="tentacles3"
+       min="1" max="4" value="2">
+    Passage from Initial Plating to Target Cell Yield <i>Recommended: 2</i>
+    <br>
+    <input type="number" id="tentacles2" name="tentacles2"
+       min="500" max="8000" value="2500">
+    Target Seeding Cell Density (cells/cm2) <i>Recommended: 2,000-3,000 cellls/cm2</i>
+    <br>
+    <input type="number" id="tentacles4" name="tentacles4"
+       min="2000" max="80000" value="35000">
+    Confluent Cell Density (cells/cm2) <i>Recommended: Passage at 85% Confluence</i>
+    <br>
+    <br>
+
+
+
+    <button id="calculate-button">Calculate</button><br>
+
+      <h1><span id="name"></h1>
+      <h1><span id="name2"></h1>
+      <h1><span id="name3"></h1>
+
+  <br>
+  </div>
+
+
+
+  <div id="tabularRooster" style="background-color:white; width:80% ; margin-left: 10%;  max-width:800px; font-family: Calibri;">
+  <br>
+  </div>
+
+  <div style="background-color:white; width:80% ; margin-left: 10%;  max-width:800px; font-family: Calibri;">
+  <button id="download-csv">Download CSV</button>
+  <button id="download-xlsx">Download XLSX</button>
+  <br><br>
+  </div>
+
+  <div style="background-color:white; width:80% ; margin-left: 10%;  max-width:800px; font-family: Calibri;">
+
+    <h2>Get the most out of your media.</h2>
+    <p>
+
+      <ol>
+      <li>Avoid temperature cycling the media, including components. This will compromise quality.
+      <li>Avoid water baths to warm media. Instead equilibrate the media, including components, to room temperature out of direct light. The formula is sensitive to photo- and thermal-degradation.
+      <li>Skip media changes, even half changes, between passages.
+      <li>For Xeno-Free media culture, use Corning CellBind flaskware or a vitronectin coating, otherwise cell attachment will be inconsistent and poor.
+      <li>Passage the cells at 80-90% confluent. Overly confluent cells may enter a lag phase of growth, which will reduce the total cell yield or delay cell growth. Also, overly confluent cells may produce extracellular matrix, which makes the cells aggregate in suspension. Passaging a little too early is better than a little too late.
+    </ol>
+    <br>
+    </p>
+
+
+  </div>
+
+  <!--
+  <div id="container" style="background-color:white; text-align:center; width:80%; margin-left: 10%; max-width:800px;">
+  <canvas id="dataPlot" height="150"  style="border:0px solid"></canvas>
+  <script src="js/plot.js"></script>
+  </div>
+  -->
+  
+  <script src="js/stateVariables.js"></script></div>
+
+  <script src="js/buildTable.js"></script></div>
+  <!--
+  <script src="js/calculateProducts.js"></script></div>
+  <script src="js/plot.js"></script></div>
+  -->
+  <!--
+  <script src="js/tabularRooster.js"></script></div>
+  -->
+
+</body>
+</html>

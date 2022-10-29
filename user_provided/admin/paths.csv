@@ -1,0 +1,86 @@
+name,path
+
+# admin referenced
+ref_variable,user_provided admin ref_variables.csv
+
+# admin created
+saved_values,program_generated values saved_values.csv
+
+# query_trials referenced
+search_terms,user_provided admin search_terms.csv
+search_fields,user_provided admin search_fields.json
+
+# query_trials created
+trials_json_id,program_generated trials_scraped trialsJson
+trials_found,program_generated trials_scraped  trialsFound
+nctids,program_generated trials_scraped nctids.csv
+scraped_trials,program_generated trials_scraped scraped_trials.json
+scraped_trials_df,program_generated trials_scraped scraped_trials_df.csv
+
+# list_trials referenced
+clinical_src,user_provided clinicalTrialsDownload
+excluded_trials,user_provided admin excluded_trials.csv
+
+# list_trials created
+trials_all,program_generated trials_all trials.csv
+trials_removed,program_generated trials_all trials_removed.csv
+trials_all_archive,program_generated trials_all archive trials_all_archive.csv
+trials,program_generated trials_all trials.json
+location,program_generated locations locations.csv
+
+# query_openmaps created
+geolocated,program_generated locations geolocated.csv
+location_missing,program_generated locations location_missing.csv
+geolocated_json,program_generated locations geolocated.json
+
+# write_geojson created
+geojson,program_generated geojson.json
+record_radius,program_generated geojson recod_radius.csv
+
+# assign_groups referenced
+allo_terms,user_provided admin allo_terms.csv
+auto_terms,user_provided admin auto_terms.csv
+
+# assign_group created
+groups,program_generated groups groups.csv
+js,docs js
+
+
+# year_counts created
+year_counts_pdf,program_generated counts year_counts_pdf.csv
+year_counts_cdf,program_generated counts year_counts_cdf.csv
+count_percent,program_generated counts count_percent.csv
+enrolled_percent,program_generated counts enrolled_percent.csv
+bar_count_js,docs js bar_count.js
+bar_enrolled_js,docs js bar_enrolled.js
+scatters,program_generated scatter_df
+
+pdf_js,docs js pdf.js
+cdf_js,docs js cdf.js
+enrolled_pdf,docs js enrolled_pdf.js
+pdf_js_enrolled,docs js pdf_js_enrolled.js
+cdf_js_count,docs js cdf_js_count.js
+cdf_js_enroll,docs js cdf_js_enroll.js
+
+# summarize fields referenced
+products,user_provided admin products.json
+backgroundColors,user_provided admin backgroundColors.csv
+
+# summarize fields created
+summary,program_generated summary
+summary_group,program_generated summary_group
+tableData,docs js
+products_js,docs js products.js
+
+# prepare_html created
+index,docs index.html
+script_list,docs script_list.html
+
+
+# sankey count referenced
+tissue_type_terms,user_provided admin tissue_type
+
+# sankey count created
+tissue_source_count,program_generated sankey tissue_source_count.csv
+sankey_data_count,docs js sankey_data_count.js
+sankey_data_enroll,docs js sankey_data_enroll.js

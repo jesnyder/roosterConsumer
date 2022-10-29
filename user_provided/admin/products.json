@@ -1,0 +1,689 @@
+var tableProducts =
+  [
+
+    {
+      'type': 'autologous MSC',
+      'name': 'ADSTEM Inj.',
+      'maker': 'EHLBio',
+      'allo': 'false',
+      'source': 'AD',
+      'desc': 'DESCARTES-25 is the first off-the-shelf RNA Cell Therapy for cancer. The lead indication is multiple myeloma. DESCARTES-25 is designed to deliver two complementary antitumor proteins directly to the tumor: a novel bispecific antibody that binds B-cell Maturation Antigen (BCMA) with femtomolar avidity and the potent antitumor cytokine interleukin-12 (IL-12). DESCARTES-25 cells are further engineered with a membrane-bound homing protein that directs the cells to the tumor microenvironment for local delivery of their antitumor cargo.',
+      'url': 'http://en.ehlbio.co.kr/wp/?p=263&ckattempt=1',
+      'CA_approved': 'false',
+      'condition': 'Atopic dermatitis',
+    } ,
+
+
+
+    {
+      'type': 'allogeneic MSC',
+      'name': 'Descartes 25',
+      'maker': 'Cartesian Therapeutics',
+      'allo': 'true',
+      'source': 'AD',
+      'desc': 'DESCARTES-25 is the first off-the-shelf RNA Cell Therapy for cancer. The lead indication is multiple myeloma. DESCARTES-25 is designed to deliver two complementary antitumor proteins directly to the tumor: a novel bispecific antibody that binds B-cell Maturation Antigen (BCMA) with femtomolar avidity and the potent antitumor cytokine interleukin-12 (IL-12). DESCARTES-25 cells are further engineered with a membrane-bound homing protein that directs the cells to the tumor microenvironment for local delivery of their antitumor cargo.',
+      'url': 'https://www.cartesiantherapeutics.com/clinical-trials/',
+      'CA_approved': 'true',
+      'condition': 'Oncology',
+    } ,
+
+    {
+      'type': 'allogeneic MSC',
+      'name': 'Descartes 30',
+      'maker': 'Cartesian Therapeutics',
+      'allo': 'true',
+      'source': 'AD',
+      'desc': 'DESCARTES-30 is the first engineered cell therapy for respiratory diseases. The lead indication is Acute Respiratory Distress Syndrome (ARDS; including COVID-19 ARDS). Descartes-30 contains allogeneic (off-the-shelf) human Mesenchymal Stem Cells (MSCs) engineered to secrete two human DNases that specifically degrade Neutrophil Extracellular Traps (NETs). NETs are a key, as yet unaddressed mediator of ARDS.',
+      'url': 'https://www.cartesiantherapeutics.com/clinical-trials/',
+      'CA_approved': 'true',
+      'condition': 'ARDS',
+    } ,
+
+    {
+      'type': 'allogeneic MSC',
+      'name': 'Cx601 / darvadstrocel',
+      'maker': 'Takeda and TiGenix',
+      'allo': 'true',
+      'source': 'AD',
+      'desc': ' ',
+      'url': 'https://www.takeda.com/newsroom/newsreleases/2017/takeda-and-tigenix-announce-that-cx601-darvadstrocel-has-received-a-positive-chmp-opinion-to-treat-complex-perianal-fistulas-in-crohns-disease/',
+      'CA_approved': 'true',
+      'condition': 'complex perianal fistulas in adult Crohn’s disease',
+    } ,
+
+    {
+      'type': 'allogeneic MSC',
+      'name': 'NestaCell',
+      'maker': 'Cellavita',
+      'allo': 'true',
+      'source': 'BM',
+      'desc': 'NestaCell is a third-party, off-the-shelf suspension of ex-vivo cultured adult human mesenchymal stem cells intended for intravenous infusion.',
+      'url': 'https://www.medicinesfaq.com/brand/nestacell',
+      'CA_approved': 'true',
+      'condition': 'acute Graft versus Host Disease (aGvHD)',
+    } ,
+    {
+      'type': 'allogeneic MSC',
+      'name': 'AlloRx Stem Cell therapy',
+      'maker': 'Vitro Biopharma',
+      'allo': 'true',
+      'source': 'UC',
+      'desc': 'Wharton\'s jelly-derived cell therapy for autoimmune diseases and inflammatory disorders',
+      'url': 'https://www.vitrobiopharma.com/pages/research-products',
+      'CA_approved': 'false',
+      'condition': 'Anti-aging',
+    } ,
+    {
+      'type': 'allogeneic MSC',
+      'name': 'ALLO-ASC-DFU',
+      'maker': 'Anterogen Co. Ltd.',
+      'allo': 'true',
+      'source': 'AD',
+      'desc': 'Hydrogel sheet containing allogenic mesenchymal stem cells',
+      'url': 'https://clinicaltrials.gov/ct2/show/NCT03370874',
+      'CA_approved': 'false',
+      'condition': 'Diabetic Foot Ulcer',
+    } ,
+
+    {
+      'type': 'autologous MSC',
+      'name': 'MSC-AFP',
+      'maker': 'Mayo Clinic  - Michael C. Stephens',
+      'allo': 'false',
+      'source': ' ',
+      'desc': 'Hydrogel sheet containing allogenic mesenchymal stem cells Autologous mesenchymal stromal cell transfer using a hydrogel sheet using the biomatrix Gore Bio-A Fistula Plug',
+      'url': 'https://clinicaltrials.gov/ct2/show/NCT03449069',
+      'CA_approved': 'false',
+      'condition': 'Crohn\'s Perianal Fistulas',
+    } ,
+
+
+    {
+      'type': 'autologous MSC',
+      'name': 'HB-adMSCs',
+      'maker': 'Hope Biosciences',
+      'allo': 'false',
+      'source': 'AD',
+      'desc': 'autologous adipose-derived mesenchymal stem cells',
+      'url': 'https://clinicaltrials.gov/ct2/show/NCT03691909',
+      'CA_approved': 'false',
+      'condition': 'Rheumatoid Arthritis',
+    } ,
+
+    {
+      'type': 'allogeneic MSC',
+      'name': 'UMC119-06',
+      'maker': 'Meridigen Biotech Co. Ltd.',
+      'allo': 'true',
+      'source': 'UC',
+      'desc': 'ex vivo cultured human umbilical cord tissue-derived mesenchymal stem cells product ',
+      'url': 'http://www.meridigen.com/en-global/new_drug/index/copd',
+      'CA_approved': 'false',
+      'condition': 'Chronic Obstructive Pulmonary Disease',
+    } ,
+
+    {
+      'type': 'allogeneic EV',
+      'name': "ExoFlo / DB-001",
+      'maker': 'Direct Biologics',
+      'allo': 'true',
+      'source': 'BM',
+      'desc': 'extracellular vesicles isolated from human bone marrow mesenchymal stromal/stem cells',
+      'url': 'https://directbiologics.com/exoflo/',
+      'CA_approved': 'false',
+      'condition': 'Acute Respiratory Distress Syndrome',
+    } ,
+
+
+    {
+      'type': 'allogeneic MSC',
+      'name': 'EN001',
+      'maker': 'ENCell',
+      'allo': 'true',
+      'source': 'UC',
+      'desc': 'allogeneic umbilical cord-derived mesenchymal stem cells',
+      'url': 'https://directbiologics.com/exoflo/',
+      'CA_approved': 'false',
+      'condition': 'Duchenne Muscular Dystrophy',
+    } ,
+
+    {
+      'type': 'allogeneic MSC',
+      'name': 'COVI-MSC',
+      'maker': 'Sorrento Therapeutics Inc.',
+      'allo': 'true',
+      'source': 'AD',
+      'desc': 'intravenous infusion of allogeneic adipose stem cells',
+      'url': 'https://sorrentotherapeutics.com/research/covid-19/mesenchymal-stem-cel/',
+      'CA_approved': 'false',
+      'condition': 'Acute Respiratory Distress Syndrome',
+    } ,
+
+    {
+      'type': 'allogeneic MSC',
+      'name': 'SCM-AGH',
+      'maker': 'SCM Lifescience Co. Ltd. ',
+      'allo': 'true',
+      'source': 'BM',
+      'desc': 'IV infusion of allogeneic human bone marrow-derived mesenchymal stem cells',
+      'url': 'https://clinicaltrials.gov/ct2/show/NCT04179760',
+      'CA_approved': 'false',
+      'condition': 'Dermatitis, Atopic',
+    } ,
+
+    {
+      'type': 'autologous MSC',
+      'name': 'XCEL-MT-OSTEO-ALPHA',
+      'maker': 'Banc de Sang i Teixits',
+      'allo': 'false',
+      'source': ' ',
+      'desc': ' a tissue engineering product composed by "ex-vivo" expanded autologous mesenchymal stem cells fixed in allogenic bone tissue',
+      'url': 'https://www.clinicaltrials.gov/ct2/show/NCT01605383',
+      'CA_approved': 'false',
+      'condition': 'Avascular Necrosis of Femur Head',
+    } ,
+
+    {
+      'type': 'autologous MSC',
+      'name': 'JOINTSTEM',
+      'maker': 'R-Bio ',
+      'allo': 'false',
+      'source': 'AD',
+      'desc': 'autologous adipose tissue derived MSCs',
+      'url': 'https://clinicaltrials.gov/ct2/show/NCT04427930',
+      'CA_approved': 'false',
+      'condition': 'Osteoarthritis, Knee',
+    } ,
+
+    {
+      'type': 'allogeneic MSC',
+      'name': 'Remestemcel-L',
+      'maker': 'Osiris Therapeutics',
+      'allo': 'true',
+      'source': 'BM',
+      'desc': 'allogeneic human bone marrow-derived mesenchymal stem cells',
+      'url': 'https://en.wikipedia.org/wiki/Prochymal',
+      'CA_approved': 'true',
+      'condition': 'Graft vs Host Disease',
+    } ,
+
+
+    {
+      'type': 'allogeneic MSC',
+      'name': 'Prochymal',
+      'maker': 'Osiris Therapeutics',
+      'allo': 'true',
+      'source': 'BM',
+      'desc': 'allogeneic human bone marrow-derived mesenchymal stem cells',
+      'url': 'https://en.wikipedia.org/wiki/Prochymal',
+      'CA_approved': 'true',
+      'condition': 'Graft vs Host Disease',
+    } ,
+
+    {
+      'type': 'allogeneic MSC',
+      'name': 'Ryoncil',
+      'maker': 'Mesoblast',
+      'allo': 'true',
+      'source': 'BM',
+      'desc': 'allogeneic human bone marrow-derived mesenchymal stem cells',
+      'url': 'https://en.wikipedia.org/wiki/Prochymal',
+      'CA_approved': 'true',
+      'condition': 'Graft vs Host Disease',
+    } ,
+
+    {
+      'type': 'allogeneic MSC',
+      'name': 'SMUP-IA-01',
+      'maker': 'Medipost',
+      'allo': 'true',
+      'source': 'UC',
+      'desc': 'allogeneic umbilical cord blood-derived mesenchymal stem cells',
+      'url': 'https://www.medi-post.com/smup-ia-01/',
+      'CA_approved': 'false',
+      'condition': 'Osteoarthritis',
+    } ,
+
+    {
+      'type': 'allogeneic mitochondria',
+      'name': 'PN-101',
+      'maker': 'Paean Biotechnology Inc.',
+      'allo': 'true',
+      'source': 'UC',
+      'desc': ' Mitochondria isolated from Allogeneic Umbilical Cord-derived Mesenchymal Stem Cells',
+      'url': 'http://www.paeanbio.com/science',
+      'CA_approved': 'false',
+      'condition': 'Dermatomyositis',
+    } ,
+
+    {
+      'type': 'allogeneic MSC',
+      'name': 'MSCTC-0010',
+      'maker': 'IMAC Holdings, Inc. ',
+      'allo': 'true',
+      'source': 'UC',
+      'desc': ' umbilical cord-derived allogeneic mesenchymal stem cells',
+      'url': 'https://www.clinicaltrials.gov/ct2/show/NCT04385056',
+      'CA_approved': 'false',
+      'condition': 'Bradykinesia',
+    } ,
+
+    {
+      'type': 'Microbeads',
+      'name': 'HMB002',
+      'maker': "King's College Hospital NHS Trust",
+      'allo': 'true',
+      'source': 'HE',
+      'desc': 'an optimal combination of hepatocytes and mesenchymal stromal cells put together in peptide-alginate microbeads',
+      'url': 'https://clinicaltrials.gov/ct2/show/NCT05491135?intr=HMB002&draw=2&rank=1',
+      'CA_approved': 'false',
+      'condition': 'Acute Liver Failure',
+  } ,
+
+
+  {
+      'type': 'allogeneic MSC',
+      'name': 'Cartistem',
+      'maker': "Medipost",
+      'allo': 'true',
+      'desc': 'allogeneic umbilical cord blood-derived mesenchymal stem cells',
+      'source': 'UC',
+      'url': 'https://www.medi-post.com/cartistem/',
+      'CA_approved': 'true',
+      'condition': 'Osteoarthritis',
+  } ,
+
+
+    {
+        'type': 'allogeneic MSC',
+        'name': 'Alofisel',
+        'maker': "Takeda / Tigenix",
+        'allo': 'true',
+        'desc': 'allogeneic expanded adipose-derived mesenchymal stem cells',
+        'source': 'AD',
+        'url': 'https://en.wikipedia.org/wiki/Darvadstrocel',
+        'CA_approved': 'true',
+        'condition': 'Crohn\'s Perianal Fistulas',
+    } ,
+
+    {
+        'type': 'allogeneic MSC',
+        'name': 'Darvadstrocel​',
+        'maker': "Takeda / Tigenix",
+        'source': 'AD',
+        'allo': 'true',
+        'desc': 'allogeneic expanded adipose-derived mesenchymal stem cells',
+        'url': 'https://en.wikipedia.org/wiki/Darvadstrocel',
+        'CA_approved': 'true',
+        'condition': 'Crohn\'s Perianal Fistulas',
+    } ,
+
+    {
+        'type': 'allogeneic MSC',
+        'name': 'Cx601',
+        'maker': "Takeda / Tigenix",
+        'source': 'AD',
+        'allo': 'true',
+        'desc': 'allogeneic expanded adipose-derived mesenchymal stem cells',
+        'url': 'https://en.wikipedia.org/wiki/Darvadstrocel',
+        'CA_approved': 'true',
+        'condition': 'Crohn\'s Perianal Fistulas',
+    } ,
+
+    {
+        'type': 'allogeneic MSC',
+        'name': 'Stempeucel',
+        'maker': "Stempeutics",
+        'allo': 'true',
+        'source': 'BM',
+        'desc': 'allogeneic Mesenchymal Stromal Cells (MSC) derived from bone marrow of healthy, adult volunteers',
+        'url': 'https://www.stempeutics.com/stempeucel',
+        'CA_approved': 'true',
+        'condition': 'Critical Limb Ischemia',
+    } ,
+
+    {
+        'type': 'allogeneic MSC',
+        'name': 'Stemirac',
+        'maker': "Nipro",
+        'allo': 'true',
+        'source': 'BM',
+        'desc': 'allogeneic Mesenchymal Stromal Cells (MSC) derived from bone marrow of healthy, adult volunteers',
+        'url': 'https://synapse.inc/medicine/20416/Agents_affecting_cellular_function/STEMIRAC_Injection',
+        'CA_approved': 'true',
+        'condition': 'Spinal Cord Injury',
+    } ,
+
+
+    {
+        'type': 'allogeneic MSC',
+        'name': 'Cordstem-ST',
+        'maker': "CHABiotech CO. Ltd",
+        'allo': 'true',
+        'source': 'UC',
+        'desc': 'Intravenous Transplantation of Human Umbilical Cord-derived Mesenchymal Stem Cells',
+        'url': 'https://clinicaltrials.gov/ct2/show/NCT02378974?intr=Cordstem-ST&draw=2&rank=1',
+        'CA_approved': 'false',
+        'condition': 'Cerebral Infarction',
+    } ,
+
+
+    {
+        'type': 'allogeneic MSC',
+        'name': 'Chondrochymal',
+        'maker': "Taiwan Bio Therapeutics Co. Ltd. ",
+        'allo': 'true',
+        'source': 'BM',
+        'desc': 'bone marrow was aspirated from the iliac crest or femur',
+        'url': 'https://clinicaltrials.gov/ct2/show/NCT05027581?intr=Chondrochymal&draw=2&rank=1',
+        'CA_approved': 'false',
+        'condition': 'Osteoarthritis, Knee',
+    } ,
+
+
+    {
+        'type': 'autologous MSC',
+        'name': 'MSC-KI-PL-204',
+        'maker': "Karolinska University Hospital",
+        'allo': 'false',
+        'source': ' ',
+        'desc': 'autologous mesenchymal stromal cells',
+        'url': 'https://clinicaltrials.gov/ct2/show/NCT04290182',
+        'CA_approved': 'false',
+        'condition': 'Vocal Fold Scar',
+    } ,
+
+    {
+        'type': 'allogeneic MSC',
+        'name': 'CardioCell',
+        'maker': "John Paul II Hospital, Krakow",
+        'allo': 'true',
+        'source': 'UC',
+        'desc': "Using Wharton's Jelly as an Unlimited Source of Mesenchymal Stem Cells",
+        'url': 'https://clinicaltrials.gov/ct2/show/NCT03423732',
+        'CA_approved': 'false',
+        'condition': 'Critical Limb Ischemia',
+    } ,
+
+
+
+    {
+        'type': 'allogeneic MSC',
+        'name': 'BOOST cells',
+        'maker': "Christian Medical College, Vellore, India",
+        'allo': 'true',
+        'source': 'FE',
+        'desc': "Allogeneic Fetal Mesenchymal Stem",
+        'url': 'https://www.longeveron.com/',
+        'CA_approved': 'false',
+        'condition': 'Osteogenesis Imperfecta',
+    } ,
+
+    {
+        'type': 'allogeneic MSC',
+        'name': 'Lomecel-B',
+        'maker': "Longeveron",
+        'allo': 'true',
+        'source': 'BM',
+        'desc': "isolated from the donated bone marrow of young healthy adults",
+        'url': 'https://www.longeveron.com/',
+        'CA_approved': 'false',
+        'condition': 'Acute Respiratory Distress Syndrome',
+    } ,
+
+    {
+        'type': 'allogeneic MSC',
+        'name': 'WJ-MSC (XCEL-UMC-BETA)',
+        'maker': "Banc de Sang i Teixits ",
+        'allo': 'true',
+        'source': 'UC',
+        'desc': "isolated from wharton jelly",
+        'url': 'https://www.longeveron.com/',
+        'CA_approved': 'false',
+        'condition': 'Spinal Cord Injury',
+    } ,
+
+
+    {
+        'type': 'allogeneic MSC',
+        'name': 'ProTrans',
+        'maker': "NextCell Pharma Ab",
+        'allo': 'true',
+        'source': 'UC',
+        'desc': "wharton jelly pooled allogenic mesenchymal stromal cell treatment",
+        'url': 'https://www.nextcellpharma.com/en/technology#protrans',
+        'CA_approved': 'false',
+        'condition': 'Diabetes',
+    } ,
+
+    {
+        'type': 'autologous',
+        'name': 'Cellgram-ED',
+        'maker': "Pharmicell Co. Ltd.",
+        'allo': 'false',
+        'source': 'BM',
+        'desc': "Autologous Bone Marrow-derived Mesenchymal Stem Cells",
+        'url': 'https://clinicaltrials.gov/ct2/show/NCT04594850',
+        'CA_approved': 'false',
+        'condition': 'Erectile Dysfunction',
+    } ,
+
+
+    {
+        'type': 'allogeneic adipse MSC',
+        'name': 'AstroStem-V',
+        'maker': "Nature Cell Co. Ltd. ",
+        'allo': 'true',
+        'source': 'AD',
+        'desc': "Allogenic adipose tissue-derived mesenchymal stem cells (AdMSCs)",
+        'url': 'https://clinicaltrials.gov/ct2/show/NCT04527224',
+        'CA_approved': 'false',
+        'condition': 'Covid19 Pneumonia',
+    } ,
+
+
+    {
+        'type': 'autologous adipse MSC',
+        'name': 'RNL-Vascostem',
+        'maker': "R-Bio",
+        'allo': 'false',
+        'source': 'AD',
+        'desc': "autologous transplantation of Adipose Tissue derived Mesenchymal stem cells (MSCs) in patient with Buerger's disease",
+        'url': 'https://clinicaltrials.gov/ct2/show/NCT01302015',
+        'CA_approved': 'false',
+        'condition': "Buerger's Disease",
+    } ,
+
+    {
+        'type': '',
+        'name': 'CorLiCyte',
+        'maker': "University of Colorado, Denver ",
+        'allo': 'true',
+        'source': 'AD',
+        'desc': "autologous transplantation of Adipose Tissue derived Mesenchymal stem cells (MSCs) in patient with Buerger's disease",
+        'url': 'https://clinicaltrials.gov/ct2/show/NCT04104451',
+        'CA_approved': 'false',
+        'condition': "Diabetic Foot Ulcer",
+    } ,
+
+    {
+        'type': 'autologous Mesenchymal Stromal Stem Cells Secreting',
+        'name': 'NurOwn (MSC-NTF cells)',
+        'maker': "Brainstorm-Cell Therapeutics",
+        'allo': 'false',
+        'source': 'BM',
+        'desc': "autologous Mesenchymal Stromal Stem Cells Secreting Neurotrophic Factors (MSC-NTF cells) involving 20 participants with progressive MS at multiple investigational study sites.",
+        'url': 'https://www.mndassociation.org/research/clinical-trials/treatment-trials/nurown/',
+        'CA_approved': 'false',
+        'condition': "Multiple Sclerosis, Chronic Progressive",
+    } ,
+
+
+    {
+        'type': '',
+        'name': 'Ossium vBM-MSC',
+        'maker': "Ossium Health, Inc.",
+        'allo': 'true',
+        'source': 'BM',
+        'desc': "MSCs are derived from the vertebral bodies of organ donors and are phenotypically and functionally equivalent to MSCs obtained from aspirated BM.",
+        'url': 'https://ossiuminventa.com/msc-cgmp/',
+        'CA_approved': 'false',
+        'condition': "Crohn's Perianal Fistulas",
+    } ,
+
+    {
+        'type': '',
+        'name': 'PrimeMSK',
+        'maker': "Thomas Advanced Medical LLC",
+        'allo': 'true',
+        'source': 'UC',
+        'desc': "MSCs are derived from the vertebral bodies of organ donors and are phenotypically and functionally equivalent to MSCs obtained from aspirated BM.",
+        'url': 'http://thomasadvancedmedical.com/products/',
+        'CA_approved': 'false',
+        'condition': "Various Chronic Diseases",
+    } ,
+
+
+    {
+        'type': '',
+        'name': 'PrimePro',
+        'maker': "Thomas Advanced Medical LLC",
+        'allo': 'true',
+        'source': 'UC',
+        'desc': "MSCs are derived from the vertebral bodies of organ donors and are phenotypically and functionally equivalent to MSCs obtained from aspirated BM.",
+        'url': 'http://thomasadvancedmedical.com/products/',
+        'CA_approved': 'false',
+        'condition': "Various Chronic Diseases",
+    } ,
+
+
+
+        {
+            'type': '',
+            'name': 'AdMSC',
+            'maker': "Nature Cell Co. Ltd.",
+            'allo': 'false',
+            'source': 'AD',
+            'desc': "",
+            'url': 'https://clinicaltrials.gov/ct2/show/NCT03117738',
+            'CA_approved': 'false',
+            'condition': "Alzheimer Disease",
+        } ,
+
+
+        {
+            'type': "iMSC",
+            'name': "CYP-001",
+            'maker': "Cynata Therapeutics Limited ",
+            'allo': 'true',
+            'source': "iPSC",
+            'desc': "The active agent in CYP-001 is Cymerus mesenchymal stem cells (MSCs), which are derived through a proprietary induced pluripotent stem cell (iPSC) and mesenchymoangioblast (MCA)-derived production process.",
+            'url': 'https://bioinformant.com/cynatas-cyp-001-safety-efficacy-endpoints/',
+            'CA_approved': 'false',
+            'condition': "Acute Respiratory Distress Syndrome",
+        } ,
+
+        {
+            'type': "iMSC",
+            'name': "CYP-006TK",
+            'maker': "Cynata Therapeutics Limited ",
+            'allo': 'true',
+            'source': "iPSC",
+            'desc': "CYP-006TK is allogenic mesenchymoangioblast-derived mesenchymal stem cells (MCA-derived MSCs) or Cymerus™ MSCs, seeded onto a heptylamine plasma polymer-coated silicone dressing",
+            'url': 'https://clinicaltrials.gov/ct2/show/NCT05165628',
+            'CA_approved': 'false',
+            'condition': "Diabetic Foot Ulcers",
+        } ,
+
+
+        {
+            'type': "MSC",
+            'name': "XSTEM-OA",
+            'maker': "Xindu Pty Ltd",
+            'allo': 'true',
+            'source': "AD",
+            'desc': "XSTEM-OA is an allogeneic, adipose tissue-derived, integrin alpha10beta1-selected and expanded mesenchymal stem cell (MSC) product for the treatment of osteoarthritis.",
+            'url': 'https://clinicaltrials.gov/ct2/show/NCT05344157',
+            'CA_approved': 'false',
+            'condition': "Osteoarthritis",
+        } ,
+
+
+        {
+            'type': "MSC",
+            'name': "PLX-PAD",
+            'maker': "Pluristem Ltd. ",
+            'allo': 'true',
+            'source': "PL",
+            'desc': "PLX-PAD - allogeneic ex-vivo expanded placental mesenchymal-like adherent stromal cells",
+            'url': 'https://clinicaltrials.gov/ct2/show/NCT04614025',
+            'CA_approved': 'false',
+            'condition': "Acute Respiratory Distress Syndrome",
+        } ,
+
+
+        {
+            'type': "EV",
+            'name': "SF-MSC-EX",
+            'maker': "Eskisehir Osmangazi University",
+            'allo': 'false',
+            'source': " ",
+            'desc': "autologous treatment protocol to repair damaged cartilage tissue",
+            'url': 'https://clinicaltrials.gov/ct2/show/NCT05261360',
+            'CA_approved': 'false',
+            'condition': "Injury, Meniscus",
+        } ,
+
+
+        {
+            'type': "EV",
+            'name': "SF-MSC",
+            'maker': "Eskisehir Osmangazi University",
+            'allo': 'false',
+            'source': " ",
+            'desc': "autologous treatment protocol to repair damaged cartilage tissue",
+            'url': 'https://clinicaltrials.gov/ct2/show/NCT05261360',
+            'CA_approved': 'false',
+            'condition': "Injury, Meniscus",
+        } ,
+
+        {
+            'type': "MSC",
+            'name': "IMS001",
+            'maker': "ImStem Biotechnology",
+            'allo': 'true',
+            'source': "EM",
+            'desc': "IMS001 is a human embryonic cell derived (hESC) mesenchymal stem cell (MSC).",
+            'url': "https://clinicaltrials.gov/ct2/show/NCT04956744",
+            'CA_approved': 'false',
+            'condition': "Multiple Sclerosis",
+        } ,
+
+
+        {
+            'type': "MSC",
+            'name': "BRTX-100",
+            'maker': "BioRestorative Therapiesy",
+            'allo': 'false',
+            'source': " ",
+            'desc': "Hypoxic cultured mesenchymal stem cells (MSCs) from autologous bone marrow with autologous platelet lysate.",
+            'url': "https://clinicaltrials.gov/ct2/show/NCT04042844",
+            'CA_approved': 'false',
+            'condition': "Lumbar Disc Disease",
+        } ,
+
+        {
+            'type': "MSC",
+            'name': "Cellgram-LC ",
+            'maker': "Pharmicell Co., Ltd.",
+            'allo': 'false',
+            'source': "BM",
+            'desc': "Within 1 month after extracting bone marrow, directly inject 7X10^7 autologous bone marrow-derived mesenchymal stem cells within liver through the hepatic artery.",
+            'url': "https://clinicaltrials.gov/ct2/show/NCT04689152",
+            'CA_approved': 'false',
+            'condition': "Alcoholic Cirrhosis",
+        } ,
+
+
+
+  ]

@@ -1,0 +1,250 @@
+<html>
+  <head>
+    <title>MSC Clinical Trials</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="js/leaflet.timeline.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.14.0.min.js"></script>
+
+    <link href="https://unpkg.com/tabulator-tables@4.8.1/dist/css/tabulator.min.css" rel="stylesheet">
+    <script type="text/javascript" src="https://unpkg.com/tabulator-tables@4.8.1/dist/js/tabulator.min.js"></script>
+
+  </head>
+
+
+  <body>
+
+
+
+		<script src="js/allo.js"></script>
+		<script src="js/auto.js"></script>
+		<script src="js/both.js"></script>
+		<script src="js/undeclared.js"></script>
+    <script src="js/allo_recent.js"></script>
+		<script src="js/auto_recent.js"></script>
+		<script src="js/both_recent.js"></script>
+		<script src="js/undeclared_recent.js"></script>
+
+    <script src="js/Conditions.js"></script>
+    <script src="js/Interventions.js"></script>
+    <script src="js/Locations.js"></script>
+    <script src="js/Sponsor_Collaborators.js"></script>
+    <script src="js/Phases.js"></script>
+    <script src="js/products.js"></script>
+
+
+
+
+    <!-- Animated map-->
+    <div id="map" style="margin-left: 3%; width:96% ;"></div>
+    <script src="js/map.js"></script>
+
+
+    <div id="text" style="width:80% ; margin-left: 3%; font-family: Calibri;">
+
+    <h1>The Sun Never Sets on a World Spinning with hMSC Advanced Therapeutics</h1>
+
+    <h2></h2>
+
+
+    Our regenerative medicine community built a global, coordinated effort to translate mesenchymal stromal cell (MSC) research to efficacious therapies. The U.S. National Library of Medicine database,
+
+    <a href="https://clinicaltrials.gov/"  target="_blank" rel="noopener">ClinicalTrials.gov</a>
+     indexed over 1416 clinical trials since 1995 that use an MSC intervention. These trials enrolled more than 65,000 participants to treat dozens of conditions, which includes arthritis, multiple sclerosis, amyotrophic lateral sclerosis (ALS), and COVID-19. This body of work is your resource. Beyond lists and maps, navigate through our community using this interactive map. Trials are grouped based on the MSC source, which differentiates autologous, bespoke therapeutic manufacturing from allogeneic, batch-produced processes.
+     <br> <br>
+     To make reliable therapies, the MSC source must be standardized. There has been a historic choice between allogeneic and autologous. Patients donate their own cellular material for autologous therapies, which derisks immune response, but adds lead time to the preparation of the therapy and unknowns to the reliability of the cells. Allogeneic MSCs separate therapeutic manufacture from medical treatment for improved quality control and off-the-shelf accessibility.
+     <br> <br>
+     Explore the interactive map of trials grouped by MSC source: allogenic (orange), autologous (dark purple), both (light blue), or undeclared (gray). A trial can only belong to one group. If a trial has multiple study sites, it will appear multiple times on the map. Cells pass  analytically testing qualified, ready off-the-shelf, and distributed globally for comparative studies. Click on the circular marker to see the trial title, location name, number enrolled, and a link to more information. The radius of the circular marker reflects the number enrolled. Larger circles enrolled more participants. Use the +/- in the upper left hand corner of the map or your mouse scroll wheel to zoom in and out of the map. Use the timeline along the bottom edge to animate the map. Trials appear according to their start date. The button on the top right corner of the map allows you to prescriptively show or hide some of the groups.
+     <br> <br>
+     The code to make the map is open source, free, and available from
+      <a href="https://github.com/jesnyder/mapClinical"  target="_blank" rel="noopener">github</a>
+      .</p>
+      <br> <br>
+    </div>
+
+
+    <div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+    <canvas id="line-chart-cdf_count" height="125"  style="border:0px solid"></canvas>
+    <script src="js/cdf_js_count.js"></script>
+    </div>
+
+
+
+    <div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+    <canvas id="line-chart"  height="125"  style="border:0px solid"></canvas>
+    <script src="js/pdf.js"></script>
+    </div>
+
+
+    <div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;">
+    <p> <br> </p> </div>
+
+
+    <div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+    <canvas id="bar_count_js"   height="125"   style="border:0px solid"></canvas>
+    <script src="js/bar_count.js"></script>
+    </div>
+
+
+    <div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;">
+    <p> <br> </p> </div>
+
+    <div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+    <canvas id="line-chart-cdf_enroll"  height="125"  style="border:0px solid"></canvas>
+    <script src="js/cdf_js_enroll.js"></script>
+    </div>
+
+
+    <div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+    <canvas id="line-chart-enroll"   height="125"   style="border:0px solid"></canvas>
+    <script src="js/pdf_js_enrolled.js"></script>
+    </div>
+
+
+    <div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;">
+    <p> <br> </p> </div>
+
+    <div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+    <canvas id="bar_enrolled_js"   height="125"   style="border:0px solid"></canvas>
+    <script src="js/bar_enrolled.js"></script>
+    </div>
+
+
+
+
+
+
+    <!-- -->
+
+    <div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;">
+    <p> <br> </p> </div>
+
+    <div id="tabularConditions" style="width:80% ; margin-left: 10%; font-family: Calibri;"></div>
+    <script src="js/tabularConditions.js"></script>
+    </div>
+
+    <div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;">
+    <p> <br> </p> </div>
+
+    <div id="tabularPhases" style="width:80% ; margin-left: 10%; font-family: Calibri;"></div>
+    <script src="js/tabularPhases.js"></script>
+    </div>
+
+    <div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;">
+    <p> <br> </p> </div>
+
+    <div id="tabularSponsor" style="width:80% ; margin-left: 10%; font-family: Calibri;"></div>
+    <script src="js/tabularSponsor.js"></script>
+    </div>
+
+    <div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;">
+    <p> <br> </p> </div>
+
+    <div id="tabularInterventions" style="width:80% ; margin-left: 10%; font-family: Calibri;"></div>
+    <script src="js/tabularInterventions.js"></script>
+    </div>
+
+    <div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;">
+    <p> <br> </p> </div>
+
+    <div id="tabularLocations" style="width:80% ; margin-left: 10%; font-family: Calibri;"></div>
+    <script src="js/tabularLocations.js"></script>
+    </div>
+
+
+    <div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;">
+    <p> <br> </p> </div>
+
+    <div id="container" style="text-align:center; width:70%; margin-left: 20%; font-family: Calibri;">
+    <canvas id="scatter_enrolled"   height="125"   style="border:0px solid"></canvas>
+    <script src="js/scatter_enrolled.js"></script>
+    </div>
+
+    <div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;">
+    <p> <br> </p> </div>
+
+    <div id="container" style="text-align:center; width:70%; margin-left: 20%; font-family: Calibri;">
+    <canvas id="scatter_enrolled_grouped"   height="125"   style="border:0px solid"></canvas>
+    <script src="js/scatter_enrolled_grouped.js"></script>
+    </div>
+
+
+
+    <div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;">
+    <p> <br> </p> </div>
+
+    <div id="container" style="text-align:center; width:70%; margin-left: 20%; font-family: Calibri;">
+    <canvas id="doughnut_Status_grouped"   height="125"   style="border:0px solid"></canvas>
+    <script src="js/doughnut_Status_grouped.js"></script>
+    </div>
+
+
+    <div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;">
+    <p> <br> </p> </div>
+
+    <div id="container" style="text-align:center; width:70%; margin-left: 20%; font-family: Calibri;">
+    <canvas id="doughnut_Gender_grouped"   height="125"   style="border:0px solid"></canvas>
+    <script src="js/doughnut_Gender_grouped.js"></script>
+    </div>
+
+    <div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;">
+    <p> <br> </p> </div>
+
+    <div id="container" style="text-align:center; width:70%; margin-left: 20%; font-family: Calibri;">
+    <canvas id="doughnut_Funded_Bys_grouped"   height="125"   style="border:0px solid"></canvas>
+    <script src="js/doughnut_Funded_Bys_grouped.js"></script>
+    </div>
+
+
+    <div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;">
+    <p>
+    <br>
+    A therapy progress through the phases of a clinical trial. Phase 1 trials emphasize safety. Phase 2 show efficacy. Phase 3 increase the number of people in the trial.
+    <br>
+    </p> </div>
+
+
+
+    <div id="container" style="text-align:center; width:70%; margin-left: 20%; font-family: Calibri;">
+    <canvas id="doughnut_Phases_grouped"   height="125"   style="border:0px solid"></canvas>
+    <script src="js/doughnut_Phases_grouped.js"></script>
+    </div>
+
+
+
+
+
+    <div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;">
+    <p>
+    <br>
+    The product lists therapeutics derived from MSCs. Most therapies use the cells, some use the MSC to derive exosomes, and one uses mitchondria from MSC. The table lists the name of ther therapy, manufactuer, source - as either adipose (AD), bone marrow (BM), and umbilical cord (UC) that include Wharton's Jelly. One studies uses MSC isolated from liver tissue (HE). Another gets even more specific and uses MSC derived from the liver of a first trimeter fetus (FE). If the therapy has recieved approval from national regulatory agency (either Canadian, Korean, Indian, Israeli, European Union, United Kingdom), then the far right column has a green check, otherwise a red X.
+    <br>
+    </p> </div>
+
+    <div id="products-table" style="width:80% ; margin-left: 10%; font-family: Calibri;"></div>
+    <script src="js/products.js"></script>
+    <script src="js/tabularProducts.js"></script>
+    </div>
+
+
+    <div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;">
+
+    <p>
+    Explore recent trials - those with a start date in 2020 or later.
+    </p>
+    </div>
+
+    <div id="map2"></div>
+    <script src="js/map2.js"></script>
+
+
+
+
+  </body>
+</html>

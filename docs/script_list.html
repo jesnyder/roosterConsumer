@@ -1,0 +1,866 @@
+<script src="js/Acronym.js"></script>
+<script src="js/Age.js"></script>
+<script src="js/all.js"></script>
+<script src="js/allo.js"></script>
+<script src="js/allo_recent.js"></script>
+<script src="js/all_recent.js"></script>
+<script src="js/auto.js"></script>
+<script src="js/auto_recent.js"></script>
+<script src="js/bar_count.js"></script>
+<script src="js/bar_enrolled.js"></script>
+<script src="js/both.js"></script>
+<script src="js/both_recent.js"></script>
+<script src="js/Brief Summary.js"></script>
+<script src="js/Brief Title.js"></script>
+<script src="js/cdf_js_count.js"></script>
+<script src="js/cdf_js_enroll.js"></script>
+<script src="js/Completion Date.js"></script>
+<script src="js/Conditions.js"></script>
+<script src="js/desc.js"></script>
+<script src="js/doughnut_Acronym.js"></script>
+<script src="js/doughnut_Age.js"></script>
+<script src="js/doughnut_Brief Summary.js"></script>
+<script src="js/doughnut_Brief Title.js"></script>
+<script src="js/doughnut_Brief_Summary_grouped.js"></script>
+<script src="js/doughnut_Completion Date.js"></script>
+<script src="js/doughnut_Conditions.js"></script>
+<script src="js/doughnut_desc.js"></script>
+<script src="js/doughnut_Enrollment.js"></script>
+<script src="js/doughnut_First Posted.js"></script>
+<script src="js/doughnut_Funded Bys.js"></script>
+<script src="js/doughnut_Funded Bys_grouped.js"></script>
+<script src="js/doughnut_Funded_Bys_grouped.js"></script>
+<script src="js/doughnut_Gender.js"></script>
+<script src="js/doughnut_Gender_grouped.js"></script>
+<script src="js/doughnut_Interventions.js"></script>
+<script src="js/doughnut_Last Update Posted.js"></script>
+<script src="js/doughnut_Locations.js"></script>
+<script src="js/doughnut_NCT Number.js"></script>
+<script src="js/doughnut_Official Title.js"></script>
+<script src="js/doughnut_Other IDs.js"></script>
+<script src="js/doughnut_Outcome Measures.js"></script>
+<script src="js/doughnut_Phases.js"></script>
+<script src="js/doughnut_Phases_grouped.js"></script>
+<script src="js/doughnut_Primary Completion Date.js"></script>
+<script src="js/doughnut_Results First Posted.js"></script>
+<script src="js/doughnut_Sponsor_Collaborators.js"></script>
+<script src="js/doughnut_Start Date.js"></script>
+<script src="js/doughnut_Status.js"></script>
+<script src="js/doughnut_Status_grouped.js"></script>
+<script src="js/doughnut_Study Designs.js"></script>
+<script src="js/doughnut_Study Documents.js"></script>
+<script src="js/doughnut_Study Results.js"></script>
+<script src="js/doughnut_Study Results_grouped.js"></script>
+<script src="js/doughnut_Study Type.js"></script>
+<script src="js/doughnut_Study Type_grouped.js"></script>
+<script src="js/doughnut_Study_Results_grouped.js"></script>
+<script src="js/doughnut_Study_Type_grouped.js"></script>
+<script src="js/doughnut_Title.js"></script>
+<script src="js/doughnut_URL.js"></script>
+<script src="js/enrolled_scatter.js"></script>
+<script src="js/Enrollment.js"></script>
+<script src="js/First Posted.js"></script>
+<script src="js/Funded Bys.js"></script>
+<script src="js/Gender.js"></script>
+<script src="js/Interventions.js"></script>
+<script src="js/Last Update Posted.js"></script>
+<script src="js/leaflet.timeline.js"></script>
+<script src="js/Locations.js"></script>
+<script src="js/map.js"></script>
+<script src="js/map2.js"></script>
+<script src="js/NCT Number.js"></script>
+<script src="js/Official Title.js"></script>
+<script src="js/Other IDs.js"></script>
+<script src="js/Outcome Measures.js"></script>
+<script src="js/pdf.js"></script>
+<script src="js/pdf_js_enrolled.js"></script>
+<script src="js/Phases.js"></script>
+<script src="js/plot.js"></script>
+<script src="js/Primary Completion Date.js"></script>
+<script src="js/products.js"></script>
+<script src="js/Results First Posted.js"></script>
+<script src="js/sankey.js"></script>
+<script src="js/sankey_count.js"></script>
+<script src="js/sankey_data.js"></script>
+<script src="js/sankey_data_count.js"></script>
+<script src="js/sankey_data_enroll.js"></script>
+<script src="js/sankey_enroll.js"></script>
+<script src="js/scatter_enrolled.js"></script>
+<script src="js/scatter_enrolled2.js"></script>
+<script src="js/scatter_enrolled_grouped.js"></script>
+<script src="js/Sponsor_Collaborators.js"></script>
+<script src="js/Start Date.js"></script>
+<script src="js/Status.js"></script>
+<script src="js/Study Designs.js"></script>
+<script src="js/Study Documents.js"></script>
+<script src="js/Study Results.js"></script>
+<script src="js/Study Type.js"></script>
+<script src="js/tabularConditions.js"></script>
+<script src="js/tabularInterventions.js"></script>
+<script src="js/tabularLocations.js"></script>
+<script src="js/tabularPhases.js"></script>
+<script src="js/tabularProducts.js"></script>
+<script src="js/tabularSponsor.js"></script>
+<script src="js/test.js"></script>
+<script src="js/Title.js"></script>
+<script src="js/undeclared.js"></script>
+<script src="js/undeclared_recent.js"></script>
+<script src="js/URL.js"></script>
+
+
+<!-- Acronym.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="Acronym" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/Acronym.js"></script>
+
+<!-- Age.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="Age" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/Age.js"></script>
+
+<!-- all.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="all" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/all.js"></script>
+
+<!-- allo.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="allo" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/allo.js"></script>
+
+<!-- allo_recent.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="allo_recent" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/allo_recent.js"></script>
+
+<!-- all_recent.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="all_recent" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/all_recent.js"></script>
+
+<!-- auto.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="auto" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/auto.js"></script>
+
+<!-- auto_recent.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="auto_recent" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/auto_recent.js"></script>
+
+<!-- bar_count.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="bar_count" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/bar_count.js"></script>
+
+<!-- bar_enrolled.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="bar_enrolled" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/bar_enrolled.js"></script>
+
+<!-- both.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="both" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/both.js"></script>
+
+<!-- both_recent.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="both_recent" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/both_recent.js"></script>
+
+<!-- Brief Summary.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="Brief Summary" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/Brief Summary.js"></script>
+
+<!-- Brief Title.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="Brief Title" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/Brief Title.js"></script>
+
+<!-- cdf_js_count.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="cdf_js_count" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/cdf_js_count.js"></script>
+
+<!-- cdf_js_enroll.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="cdf_js_enroll" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/cdf_js_enroll.js"></script>
+
+<!-- Completion Date.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="Completion Date" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/Completion Date.js"></script>
+
+<!-- Conditions.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="Conditions" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/Conditions.js"></script>
+
+<!-- desc.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="desc" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/desc.js"></script>
+
+<!-- doughnut_Acronym.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="doughnut_Acronym" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/doughnut_Acronym.js"></script>
+
+<!-- doughnut_Age.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="doughnut_Age" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/doughnut_Age.js"></script>
+
+<!-- doughnut_Brief Summary.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="doughnut_Brief Summary" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/doughnut_Brief Summary.js"></script>
+
+<!-- doughnut_Brief Title.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="doughnut_Brief Title" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/doughnut_Brief Title.js"></script>
+
+<!-- doughnut_Brief_Summary_grouped.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="doughnut_Brief_Summary_grouped" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/doughnut_Brief_Summary_grouped.js"></script>
+
+<!-- doughnut_Completion Date.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="doughnut_Completion Date" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/doughnut_Completion Date.js"></script>
+
+<!-- doughnut_Conditions.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="doughnut_Conditions" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/doughnut_Conditions.js"></script>
+
+<!-- doughnut_desc.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="doughnut_desc" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/doughnut_desc.js"></script>
+
+<!-- doughnut_Enrollment.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="doughnut_Enrollment" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/doughnut_Enrollment.js"></script>
+
+<!-- doughnut_First Posted.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="doughnut_First Posted" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/doughnut_First Posted.js"></script>
+
+<!-- doughnut_Funded Bys.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="doughnut_Funded Bys" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/doughnut_Funded Bys.js"></script>
+
+<!-- doughnut_Funded Bys_grouped.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="doughnut_Funded Bys_grouped" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/doughnut_Funded Bys_grouped.js"></script>
+
+<!-- doughnut_Funded_Bys_grouped.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="doughnut_Funded_Bys_grouped" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/doughnut_Funded_Bys_grouped.js"></script>
+
+<!-- doughnut_Gender.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="doughnut_Gender" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/doughnut_Gender.js"></script>
+
+<!-- doughnut_Gender_grouped.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="doughnut_Gender_grouped" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/doughnut_Gender_grouped.js"></script>
+
+<!-- doughnut_Interventions.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="doughnut_Interventions" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/doughnut_Interventions.js"></script>
+
+<!-- doughnut_Last Update Posted.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="doughnut_Last Update Posted" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/doughnut_Last Update Posted.js"></script>
+
+<!-- doughnut_Locations.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="doughnut_Locations" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/doughnut_Locations.js"></script>
+
+<!-- doughnut_NCT Number.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="doughnut_NCT Number" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/doughnut_NCT Number.js"></script>
+
+<!-- doughnut_Official Title.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="doughnut_Official Title" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/doughnut_Official Title.js"></script>
+
+<!-- doughnut_Other IDs.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="doughnut_Other IDs" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/doughnut_Other IDs.js"></script>
+
+<!-- doughnut_Outcome Measures.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="doughnut_Outcome Measures" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/doughnut_Outcome Measures.js"></script>
+
+<!-- doughnut_Phases.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="doughnut_Phases" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/doughnut_Phases.js"></script>
+
+<!-- doughnut_Phases_grouped.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="doughnut_Phases_grouped" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/doughnut_Phases_grouped.js"></script>
+
+<!-- doughnut_Primary Completion Date.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="doughnut_Primary Completion Date" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/doughnut_Primary Completion Date.js"></script>
+
+<!-- doughnut_Results First Posted.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="doughnut_Results First Posted" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/doughnut_Results First Posted.js"></script>
+
+<!-- doughnut_Sponsor_Collaborators.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="doughnut_Sponsor_Collaborators" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/doughnut_Sponsor_Collaborators.js"></script>
+
+<!-- doughnut_Start Date.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="doughnut_Start Date" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/doughnut_Start Date.js"></script>
+
+<!-- doughnut_Status.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="doughnut_Status" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/doughnut_Status.js"></script>
+
+<!-- doughnut_Status_grouped.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="doughnut_Status_grouped" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/doughnut_Status_grouped.js"></script>
+
+<!-- doughnut_Study Designs.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="doughnut_Study Designs" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/doughnut_Study Designs.js"></script>
+
+<!-- doughnut_Study Documents.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="doughnut_Study Documents" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/doughnut_Study Documents.js"></script>
+
+<!-- doughnut_Study Results.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="doughnut_Study Results" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/doughnut_Study Results.js"></script>
+
+<!-- doughnut_Study Results_grouped.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="doughnut_Study Results_grouped" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/doughnut_Study Results_grouped.js"></script>
+
+<!-- doughnut_Study Type.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="doughnut_Study Type" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/doughnut_Study Type.js"></script>
+
+<!-- doughnut_Study Type_grouped.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="doughnut_Study Type_grouped" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/doughnut_Study Type_grouped.js"></script>
+
+<!-- doughnut_Study_Results_grouped.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="doughnut_Study_Results_grouped" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/doughnut_Study_Results_grouped.js"></script>
+
+<!-- doughnut_Study_Type_grouped.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="doughnut_Study_Type_grouped" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/doughnut_Study_Type_grouped.js"></script>
+
+<!-- doughnut_Title.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="doughnut_Title" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/doughnut_Title.js"></script>
+
+<!-- doughnut_URL.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="doughnut_URL" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/doughnut_URL.js"></script>
+
+<!-- enrolled_scatter.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="enrolled_scatter" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/enrolled_scatter.js"></script>
+
+<!-- Enrollment.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="Enrollment" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/Enrollment.js"></script>
+
+<!-- First Posted.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="First Posted" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/First Posted.js"></script>
+
+<!-- Funded Bys.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="Funded Bys" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/Funded Bys.js"></script>
+
+<!-- Gender.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="Gender" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/Gender.js"></script>
+
+<!-- Interventions.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="Interventions" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/Interventions.js"></script>
+
+<!-- Last Update Posted.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="Last Update Posted" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/Last Update Posted.js"></script>
+
+<!-- leaflet.timeline.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="leaflet" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/leaflet.timeline.js"></script>
+
+<!-- Locations.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="Locations" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/Locations.js"></script>
+
+<!-- map.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="map" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/map.js"></script>
+
+<!-- map2.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="map2" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/map2.js"></script>
+
+<!-- NCT Number.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="NCT Number" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/NCT Number.js"></script>
+
+<!-- Official Title.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="Official Title" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/Official Title.js"></script>
+
+<!-- Other IDs.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="Other IDs" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/Other IDs.js"></script>
+
+<!-- Outcome Measures.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="Outcome Measures" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/Outcome Measures.js"></script>
+
+<!-- pdf.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="pdf" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/pdf.js"></script>
+
+<!-- pdf_js_enrolled.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="pdf_js_enrolled" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/pdf_js_enrolled.js"></script>
+
+<!-- Phases.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="Phases" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/Phases.js"></script>
+
+<!-- plot.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="plot" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/plot.js"></script>
+
+<!-- Primary Completion Date.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="Primary Completion Date" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/Primary Completion Date.js"></script>
+
+<!-- products.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="products" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/products.js"></script>
+
+<!-- Results First Posted.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="Results First Posted" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/Results First Posted.js"></script>
+
+<!-- sankey.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="sankey" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/sankey.js"></script>
+
+<!-- sankey_count.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="sankey_count" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/sankey_count.js"></script>
+
+<!-- sankey_data.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="sankey_data" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/sankey_data.js"></script>
+
+<!-- sankey_data_count.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="sankey_data_count" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/sankey_data_count.js"></script>
+
+<!-- sankey_data_enroll.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="sankey_data_enroll" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/sankey_data_enroll.js"></script>
+
+<!-- sankey_enroll.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="sankey_enroll" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/sankey_enroll.js"></script>
+
+<!-- scatter_enrolled.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="scatter_enrolled" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/scatter_enrolled.js"></script>
+
+<!-- scatter_enrolled2.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="scatter_enrolled2" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/scatter_enrolled2.js"></script>
+
+<!-- scatter_enrolled_grouped.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="scatter_enrolled_grouped" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/scatter_enrolled_grouped.js"></script>
+
+<!-- Sponsor_Collaborators.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="Sponsor_Collaborators" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/Sponsor_Collaborators.js"></script>
+
+<!-- Start Date.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="Start Date" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/Start Date.js"></script>
+
+<!-- Status.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="Status" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/Status.js"></script>
+
+<!-- Study Designs.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="Study Designs" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/Study Designs.js"></script>
+
+<!-- Study Documents.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="Study Documents" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/Study Documents.js"></script>
+
+<!-- Study Results.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="Study Results" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/Study Results.js"></script>
+
+<!-- Study Type.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="Study Type" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/Study Type.js"></script>
+
+<!-- tabularConditions.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="tabularConditions" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/tabularConditions.js"></script>
+
+<!-- tabularInterventions.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="tabularInterventions" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/tabularInterventions.js"></script>
+
+<!-- tabularLocations.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="tabularLocations" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/tabularLocations.js"></script>
+
+<!-- tabularPhases.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="tabularPhases" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/tabularPhases.js"></script>
+
+<!-- tabularProducts.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="tabularProducts" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/tabularProducts.js"></script>
+
+<!-- tabularSponsor.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="tabularSponsor" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/tabularSponsor.js"></script>
+
+<!-- test.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="test" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/test.js"></script>
+
+<!-- Title.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="Title" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/Title.js"></script>
+
+<!-- undeclared.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="undeclared" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/undeclared.js"></script>
+
+<!-- undeclared_recent.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="undeclared_recent" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/undeclared_recent.js"></script>
+
+<!-- URL.js -->
+<div id="text" style="width:80% ; margin-left: 10%; font-family: Calibri;"><p> <br> Explain the chart! </p> </div>
+<div id="container" style="text-align:center; width:80%; margin-left: 10%; font-family: Calibri;">
+<canvas id="URL" height="125"  style="border:0px solid"></canvas>
+</div>
+<script src="js/URL.js"></script>
+
