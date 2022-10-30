@@ -166,7 +166,7 @@ function buildTableData(inputInfo, passageCalcs){
           'Col3': passageInfo.cellYieldPerReadable,
           'Col4': 'cell'
         }, {
-          'Col1': 'P' + m + ' Media Per Flask',
+          'Col1': 'P' + m + ' Media Per Flask (no media exchange needed with RoosterNourish)',
           'Col3': passageInfo.mediaPer,
           'Col4': 'cell'
         }, {
