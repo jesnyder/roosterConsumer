@@ -90,10 +90,16 @@ var Pchars = function functionPchars(inputInfo, i){
 
     if (flasks >= 0.75){
 
-      flasks = Math.ceil(flasks);
-
       if (flasks < flaskCountLowest){
-        flaskCountLowest = flasks
+
+        flasks = Math.ceil(flasks);
+
+        if (flaskName == 'CS5' && flasks/2>0 && flasks%2 == 0){
+          flaskName = 'CS10';
+          flasks = flasks/2;
+        };
+
+        flaskCountLowest = flasks;
 
         var mediaVolume = flasks*(flaskVars(flaskName).mediaVol + flaskVars(flaskName).trypleVol*1.5);
 
