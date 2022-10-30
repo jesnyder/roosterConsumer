@@ -26,8 +26,8 @@ var calculatePassages = function functioncalculatePassages(inputInfo){
       flaskDesc = flaskDesc + ' + '
     };
     inputInfo.flaskDesc = flaskDesc;
-    inputInfo.flaskDescLong =  Math.ceil(mediaTotal/500) + ' bottles media + ' + flaskDesc;
-    inputInfo.mediaDescLong =  Math.ceil(mediaTotal/500) + ' bottles media';
+    inputInfo.flaskDescLong =  Math.ceil(mediaTotal/500) + ' bottles RoosterNourish + ' + flaskDesc;
+    inputInfo.mediaDescLong =  Math.ceil(mediaTotal/500) + ' bottles RoosterNourish';
 
     if (inputInfo.passage == inputInfo.passages){
       inputInfo.cellYieldTotal = Pfound.cellYield;
