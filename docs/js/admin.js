@@ -10,11 +10,18 @@ var calculatePassages = function functioncalculatePassages(inputInfo){
   for (let i=inputInfo.passages; i>0; i--) {
 
     if (i < inputInfo.passages){
-      inputInfo.cellEstimate =  inputInfo.last.cellSeed;
+      inputInfo.cellsEstimate =  inputInfo.last.cellSeed;
+      var deltaPDL = inputInfo.last.deltaPDL + inputInfo.deltaPDL;
+      inputInfo.deltaPDL =  deltaPDL;
     };
 
-    var Pfound = Pchars(inputInfo, i);
+    inputInfo.passage = i;
+
+    var Pfound = Pchars(inputInfo);
     inputInfo.last = Pfound;
+
+    console.log('Pfound = ')
+    console.log(Pfound)
 
     mediaTotal = mediaTotal + Pfound.mediaTotal;
     inputInfo.mediaTotal = mediaTotal;
@@ -68,25 +75,22 @@ var calculatePassages = function functioncalculatePassages(inputInfo){
   };
 
 
-var Pchars = function functionPchars(inputInfo, i){
+var Pchars = function functionPchars(inputInfo){
 
-  inputInfo.passage = i;
+  console.log('inputInfo = ')
+  console.log(inputInfo)
 
-  if (i = inputInfo.passages){
-    var cellEstimate = inputInfo.cellEstimate;
-  }
-  else {
-    var cellEstimate = inputInfo.last.cellSeed;
-    console.log('cellEstimate = ')
-    console.log(cellsEstimate)
-  };
+  var i = inputInfo.passage;
+
+  var cellsEstimate = inputInfo.last.cellSeed;
+  var deltaPDL = inputInfo.last.deltaPDL*inputInfo.passage;
 
   var flaskCountLowest = 10**100;
 
   for (let j = 0; j<flaskNames.length; j++) {
 
     var flaskName = flaskNames[j];
-    var flasks = cellEstimate / (flaskVars(flaskName).surArea * inputInfo.confluentDensity);
+    var flasks = cellsEstimate / (flaskVars(flaskName).surArea * inputInfo.confluentDensity);
 
     if (flasks >= 0.75){
 
@@ -119,6 +123,8 @@ var Pchars = function functionPchars(inputInfo, i){
           cellYieldPerReadable: (flaskVars(flaskName).surArea * inputInfo.confluentDensity).toLocaleString('en-US'),
           mediaPer: flaskVars(flaskName).mediaVol,
           tryplePer: flaskVars(flaskName).trypleVol,
+          surArea: flaskVars(flaskName).surArea,
+          deltaPDL: Math.round(3.322*(Math.log(flaskVars(flaskName).surArea * inputInfo.confluentDensity) - Math.log(flaskVars(flaskName).surArea * inputInfo.density) )),
         };
       };
     };

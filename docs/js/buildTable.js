@@ -12,7 +12,9 @@ document.getElementById("calculate-button").addEventListener("click", function()
     passages: passages*1,
     confluentDensity: confluentDensity*1,
     passage: passages*1,
-    cellEstimate: cells,
+    cellsEstimate: cells,
+    deltaPDL: 0,
+    last: {cellSeed: cells, deltaPDL: 0},
   };
 
   var passageCalcs = calculatePassages(inputInfo);
@@ -95,6 +97,14 @@ function buildTableData(inputInfo, passageCalcs){
       'Col3': passageCalcs.flaskDesc,
       'Col4': ' '
     } , {
+      'Col1': 'Passage Increase',
+      'Col3': '+ ' + inputInfo.passages,
+      'Col4': 'Passages'
+    } , {
+      'Col1': 'Population Doubling Level (PDL) Increase',
+      'Col3': '+ ' + inputInfo.passages*inputInfo.deltaPDL,
+      'Col4': 'PDL'
+    } , {
       'Col1': '',
       'Col2': '',
       'Col3': '',
@@ -173,6 +183,14 @@ function buildTableData(inputInfo, passageCalcs){
           'Col1': 'P' + m + ' TrypLe Per Flask',
           'Col3': passageInfo.tryplePer,
           'Col4': 'cell'
+        }, {
+          'Col1': 'P' + m + ' Surface Area Per Flask',
+          'Col3': passageInfo.surArea,
+          'Col4': 'cm2'
+        }, {
+          'Col1': 'P' + m + ' Population Doubling Level (PDL) Increase',
+          'Col3': '+ ' + passageInfo.deltaPDL,
+          'Col4': 'PDL'
         }, {
           'Col1': ' ',
           'Col3': ' ',
