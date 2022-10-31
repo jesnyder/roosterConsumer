@@ -101,7 +101,7 @@ var Pchars = function functionPchars(inputInfo, i){
 
         flaskCountLowest = flasks;
 
-        var mediaVolume = flasks*(flaskVars(flaskName).mediaVol + flaskVars(flaskName).trypleVol*1.5);
+        var mediaVolume = flasks*(flaskVars(flaskName).mediaVol + flaskVars(flaskName).trypleVol);
 
         var returnVar = {
           passage: inputInfo.passage,
