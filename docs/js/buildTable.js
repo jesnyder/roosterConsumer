@@ -77,7 +77,7 @@ function buildTableData(inputInfo, passageCalcs){
       'Col3': passageCalcs.cellSeedTotalReadable,
       'Col4': 'cells'
     } , {
-      'Col1': 'Media Volume (including to 1xTrypLe volume to quench)',
+      'Col1': 'Media Volume (including 1xTrypLe volume to quench)',
       'Col3': passageCalcs.mediaTotal.toLocaleString('en-US'),
       'Col4': 'mL'
     } , {
@@ -93,7 +93,7 @@ function buildTableData(inputInfo, passageCalcs){
       'Col3': passageCalcs.overfill,
       'Col4': '%'
     } , {
-      'Col1': 'Flaskware Description',
+      'Col1': 'Flaskware Description (with XF media, use Corning CelBind or a vitronectin coating)',
       'Col3': passageCalcs.flaskDesc,
       'Col4': ' '
     } , {
@@ -144,7 +144,7 @@ function buildTableData(inputInfo, passageCalcs){
 
     var add = [
         {
-          'Col1': 'P' + m + ' Flask Type',
+          'Col1': 'P' + m + ' Flask Type (with XF media, use Corning CelBind or a vitronectin coating)',
           'Col3': passageInfo.flaskType,
           'Col4': 'flasks'
         } , {
@@ -160,7 +160,7 @@ function buildTableData(inputInfo, passageCalcs){
           'Col3': passageInfo.cellYieldReadable,
           'Col4': 'cells'
         }, {
-          'Col1': 'P' + m + ' Media Total (including to 1xTrypLe volume to quench)',
+          'Col1': 'P' + m + ' Media Total (including 1xTrypLe volume to quench)',
           'Col3': passageInfo.mediaTotal.toLocaleString('en-US'),
           'Col4': 'mL'
         }, {
