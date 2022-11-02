@@ -93,7 +93,7 @@ function buildTableData(inputInfo, passageCalcs){
       'Col3': passageCalcs.overfill,
       'Col4': '%'
     } , {
-      'Col1': 'Flaskware Description (with XF media, use Corning CelBind or a vitronectin coating)',
+      'Col1': 'Flaskware Description (with XF media, use Corning CellBind or a vitronectin coating)',
       'Col3': passageCalcs.flaskDesc,
       'Col4': ' '
     } , {
@@ -144,7 +144,7 @@ function buildTableData(inputInfo, passageCalcs){
 
     var add = [
         {
-          'Col1': 'P' + m + ' Flask Type (with XF media, use Corning CelBind or a vitronectin coating)',
+          'Col1': 'P' + m + ' Flask Type (with XF media, use Corning CellBind or a vitronectin coating)',
           'Col3': passageInfo.flaskType,
           'Col4': 'flasks'
         } , {
